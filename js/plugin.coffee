@@ -1,25 +1,49 @@
+#
+# CoffeeScript jQuery Plugin Boilerplate
+# By: Matthieu Aussaguel, http://www.mynameismatthieu.com
+# Version: 1.0 alpha 1.0
+# Updated: June 13th, 2011
+#
+
 $ ->
     $.pluginName = (element, options) ->
         defaults = {
-            message: 'hellow word',
-            callback: ->
+            message     : 'hellow word' # setting description
+            callback    : ->            # setting description
         }
 
-        plugin = this
+        # current state of the notification
+        state = ''
 
-        plugin.settings = {}
+        # notification settings
+        @settings = {}
 
         $element = $ element
 
-        plugin.init = ->
+        ## private methods
+        setState = (_state) ->
+          state = _state
+
+        ## public methods
+        @getState = ->
+          state
+
+        # get particular plugin setting
+        @getSetting = (settingKey) ->
+          @settings[settingKey]
+
+        # call one of the plugin setting functions
+        @callSettingFunction = (functionName) ->
+          @settings[functionName]()
+
+        # init function
+        @init = ->
             plugin.settings = $.extend {}, defaults, options
             plugin.settings.callback element, plugin.settings.message
 
-        plugin.foo_public_method = ->
 
-        foo_private_method = ->
-
-        plugin.init()
+        # initialise the plugin
+        @init()
 
     $.fn.pluginName = (options) ->
         return this.each ->

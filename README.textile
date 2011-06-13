@@ -1,0 +1,25 @@
+h1. jQuery Plugin Title
+
+jQuery plugin description
+
+h2. Info
+
+Developed by Your Name
+
+h2. Examples and Instructions
+
+h3. Basic Example
+
+* HTML
+@code here@
+
+* Javascript
+@code here@
+
+h3. Website Url
+
+h2. Browsers supported
+
+h2. Changelog
+
+* Initial Release

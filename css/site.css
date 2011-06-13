@@ -1,0 +1,14 @@
+body {
+    font-family: 'Helvetica Neue',arial,helvetica,sans-serif;
+}
+
+#main {
+    width: 980px;
+    margin:  0 auto;
+}
+
+#main h1 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 100;
+}
