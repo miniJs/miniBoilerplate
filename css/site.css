@@ -2,13 +2,15 @@ body {
     font-family: 'Helvetica Neue',arial,helvetica,sans-serif;
 }
 
+h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 100;
+    border-bottom: 1px solid #CCC;
+}
+
 #main {
     width: 980px;
     margin:  0 auto;
 }
 
-#main h1 {
-    color: #333333;
-    font-size: 24px;
-    font-weight: 100;
-}
