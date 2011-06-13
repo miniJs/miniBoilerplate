@@ -38,8 +38,8 @@ $ ->
 
         # init function
         @init = ->
-            plugin.settings = $.extend {}, defaults, options
-            plugin.settings.callback element, plugin.settings.message
+            @settings = $.extend {}, defaults, options
+            @settings.callback element, @settings.message
 
 
         # initialise the plugin

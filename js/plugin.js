@@ -1,21 +1,31 @@
 (function() {
   $(function() {
     $.pluginName = function(element, options) {
-      var $element, defaults, foo_private_method, plugin;
+      var $element, defaults, setState, state;
       defaults = {
         message: 'hellow word',
         callback: function() {}
       };
-      plugin = this;
-      plugin.settings = {};
+      state = '';
+      this.settings = {};
       $element = $(element);
-      plugin.init = function() {
-        plugin.settings = $.extend({}, defaults, options);
-        return plugin.settings.callback(element, plugin.settings.message);
+      setState = function(_state) {
+        return state = _state;
       };
-      plugin.foo_public_method = function() {};
-      foo_private_method = function() {};
-      return plugin.init();
+      this.getState = function() {
+        return state;
+      };
+      this.getSetting = function(settingKey) {
+        return this.settings[settingKey];
+      };
+      this.callSettingFunction = function(functionName) {
+        return this.settings[functionName]();
+      };
+      this.init = function() {
+        this.settings = $.extend({}, defaults, options);
+        return this.settings.callback(element, this.settings.message);
+      };
+      return this.init();
     };
     return $.fn.pluginName = function(options) {
       return this.each(function() {
