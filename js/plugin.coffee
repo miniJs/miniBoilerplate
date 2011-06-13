@@ -7,24 +7,30 @@
 
 jQuery ->
     $.pluginName = (element, options) ->
+        # default plugin settings
         @defaults = {
             message     : 'hellow word' # setting description
             callback    : ->            # setting description
         }
 
-        # current state of the notification
+        ## private variables
+        # current state
         state = ''
 
-        # notification settings
+        ## public variables
+        # plugin settings
         @settings = {}
 
+        # jQuery version of DOM elment attached to the plugin
         @$element = $ element
 
         ## private methods
+        # set current state
         setState = (_state) ->
           state = _state
 
         ## public methods
+        #get current state
         @getState = ->
           state
 
