@@ -5,7 +5,9 @@ body {
 h1 {
     color: #333;
     font-size: 24px;
+    line-height: 35px;
     font-weight: 100;
+    letter-spacing: 1px;
     border-bottom: 1px solid #CCC;
 }
 
