@@ -5,9 +5,9 @@
 # Updated: June 13th, 2011
 #
 
-$ ->
+jQuery ->
     $.pluginName = (element, options) ->
-        defaults = {
+        @defaults = {
             message     : 'hellow word' # setting description
             callback    : ->            # setting description
         }
@@ -18,7 +18,7 @@ $ ->
         # notification settings
         @settings = {}
 
-        $element = $ element
+        @$element = $ element
 
         ## private methods
         setState = (_state) ->
@@ -38,7 +38,7 @@ $ ->
 
         # init function
         @init = ->
-            @settings = $.extend {}, defaults, options
+            @settings = $.extend {}, @defaults, options
             @settings.callback element, @settings.message
 
 

@@ -1,14 +1,14 @@
 (function() {
-  $(function() {
+  jQuery(function() {
     $.pluginName = function(element, options) {
-      var $element, defaults, setState, state;
-      defaults = {
+      var setState, state;
+      this.defaults = {
         message: 'hellow word',
         callback: function() {}
       };
       state = '';
       this.settings = {};
-      $element = $(element);
+      this.$element = $(element);
       setState = function(_state) {
         return state = _state;
       };
@@ -22,7 +22,7 @@
         return this.settings[functionName]();
       };
       this.init = function() {
-        this.settings = $.extend({}, defaults, options);
+        this.settings = $.extend({}, this.defaults, options);
         return this.settings.callback(element, this.settings.message);
       };
       return this.init();

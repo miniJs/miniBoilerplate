@@ -1,8 +1,8 @@
 $(function() {
-    return ($('#main')).pluginName({
-      'message': 'Hello World',
-      'callback': function(e, message) {
-        $(e).append(message);
-      }
-    });
-  });
+  $('#main').pluginName({
+        'message': 'Hello World',
+        'callback': function(e, message) {
+          $(e).append(message);
+        }
+      });
+});
