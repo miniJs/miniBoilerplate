@@ -1,6 +1,6 @@
 $(function() {
   $('#main').pluginName({
-        'message': 'Hello World',
+        'message': 'Hello World!',
         'callback': function(e, message) {
           $(e).append(message);
         }

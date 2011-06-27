@@ -2,7 +2,7 @@
 # CoffeeScript jQuery Plugin Boilerplate
 # By: Matthieu Aussaguel, http://www.mynameismatthieu.com
 # Version: 1.0 alpha 1.0
-# Updated: June 13th, 2011
+# Updated: June 27th, 2011
 #
 
 jQuery ->
@@ -21,7 +21,7 @@ jQuery ->
         # plugin settings
         @settings = {}
 
-        # jQuery version of DOM elment attached to the plugin
+        # jQuery version of DOM element attached to the plugin
         @$element = $ element
 
         ## private methods
@@ -46,7 +46,7 @@ jQuery ->
         @init = ->
             @settings = $.extend {}, @defaults, options
             @settings.callback element, @settings.message
-
+        # end init method
 
         # initialise the plugin
         @init()
