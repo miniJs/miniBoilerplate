@@ -1,6 +1,6 @@
 #
 # CoffeeScript jQuery Plugin Boilerplate
-# By: Matthieu Aussaguel, http://www.mynameismatthieu.com
+# By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
 # Version: 1.0 alpha 1.0
 # Updated: June 27th, 2011
 #
