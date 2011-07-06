@@ -9,9 +9,11 @@ jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in 
 ### Basic Example
 
 * HTML
+
     <div id="main"></div>
 
 * Javascript
+
     $('#main').pluginName({
                    message: 'Hello World!',
                    callback: function(e, message) {
