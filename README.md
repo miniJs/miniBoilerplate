@@ -8,11 +8,11 @@ jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in 
 
 ### Basic Example
 
-* HTML
+#### HTML
 
     <div id="main"></div>
 
-* Javascript
+#### Javascript
 
     $('#main').pluginName({
                    message: 'Hello World!',
@@ -22,7 +22,7 @@ jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in 
                   });
 
 ### Website Url
-coming soon... (hint: 'mini')
+coming soon
 
 ### Browsers supported
 * Any browser that supports JavaScript
