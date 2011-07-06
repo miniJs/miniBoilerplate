@@ -15,11 +15,11 @@ jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in 
 #### Javascript
 
     $('#main').pluginName({
-                   message: 'Hello World!',
-                   callback: function(e, message) {
+                   message  : 'Hello World!',
+                   callback : function(e, message) {
                         $(e).append(message);
                     }
-                  });
+                   });
 
 ### Website Url
 coming soon
