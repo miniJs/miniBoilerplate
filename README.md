@@ -1,36 +1,35 @@
-# CoffeesScript jQuery Plugin Boilerplate
-
-By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+CoffeesScript jQuery Plugin Boilerplate
+=======================
 
 jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
 
-## Examples and Instructions
-
-### Basic Example
-
-#### HTML
-
-    <div id="main"></div>
-
-#### Javascript
-
-    $('#main').pluginName({
-                   message  : 'Hello World!',
-                   callback : function(e, message) {
-                        $(e).append(message);
-                    }
-                   });
-
 ### Website Url
-coming soon
+---------------
 
-### Browsers supported
-* Any browser that supports JavaScript
+Coming soon.
 
-## Changelog
+### Bug tracker
+---------------
 
-* Initial Release
+If you find a bug, please raise it the issue here on Github! 
 
-## Resources
--   CoffeeScript Documentation: http://jashkenas.github.com/coffee-script/
--   NodeJs Wesite: http://nodejs.org/
+https://github.com/miniJs/miniCount/issues
+
+### Developer
+-------------
+
+Developed by <a href="mailto:matthieu.aussaguel@gmail">Matthieu Aussaguel</a>, <a href="http://mynameismatthieu.com">mynameismatthieu.com</a>
+
++ http://twitter.com/mattaussaguel
++ http://github.com/matthieua
+
+### Licence
+-----------
+
+Copyright &copy; 2012 Matthieu Aussaguel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
