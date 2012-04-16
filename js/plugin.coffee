@@ -1,8 +1,9 @@
 #
 # CoffeeScript jQuery Plugin Boilerplate
 # By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
-# Version: 1.0 alpha 1.0
+# Version: 1.0 Stable
 # Updated: June 27th, 2011
+# More info: http://minijs.com/
 #
 
 jQuery ->
