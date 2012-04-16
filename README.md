@@ -3,10 +3,14 @@ CoffeesScript jQuery Plugin Boilerplate
 
 jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
 
+### Verion
+----------
+v1.0 Stable
+
 ### Website Url
 ---------------
 
-Coming soon.
+Instructions: http://minijs.com/plugins/8/notification
 
 ### Bug tracker
 ---------------
