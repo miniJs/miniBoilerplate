@@ -1,34 +1,29 @@
-CoffeesScript jQuery Plugin Boilerplate
-=======================
+# CoffeesScript jQuery Plugin Boilerplate
 
 jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
 
-### Verion
-----------
-v1.0 Stable
+## Verion
 
-### Website Url
----------------
+v1.1 Stable
 
-Instructions: http://minijs.com/plugins/8/notification
+## Website Url
 
-### Bug tracker
----------------
+http://minijs.com/
+
+## Bug tracker
 
 If you find a bug, please raise it the issue here on Github! 
 
-https://github.com/miniJs/miniCount/issues
+https://github.com/miniJs/miniBoilerplate/issues
 
-### Developer
--------------
+## Developer
 
-Developed by <a href="mailto:matthieu.aussaguel@gmail">Matthieu Aussaguel</a>, <a href="http://mynameismatthieu.com">mynameismatthieu.com</a>
+Developed by [Matthieu Aussaguel](mailto:matthieu.aussaguel@gmail.com), [mynameismatthieu.com](http://mynameismatthieu.com)
 
 + http://twitter.com/mattaussaguel
 + http://github.com/matthieua
 
-### Licence
------------
+## Licence
 
 Copyright &copy; 2012 Matthieu Aussaguel
 
