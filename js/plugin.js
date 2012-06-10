@@ -3,16 +3,16 @@
 
   jQuery(function() {
     $.pluginName = function(element, options) {
-      var setState, state;
+      var setState;
       this.defaults = {
         message: 'hellow word',
         callback: function() {}
       };
-      state = '';
+      this.state = '';
       this.settings = {};
       this.$element = $(element);
-      setState = function(_state) {
-        return state = _state;
+      setState = function(state) {
+        this.state = state;
       };
       this.getState = function() {
         return state;

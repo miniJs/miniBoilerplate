@@ -6,37 +6,36 @@
   <title>Coffeescript jQuery Plugin Boilerplate</title>
   <link rel="stylesheet" href="css/site.css">
   <!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
 
-<div id="container">
-  <header>
+  <div id="container">
+    <header>
       <h1>Coffeescript jQuery Plugin Boilerplate</h1>
-  </header>
+    </header>
 
-  <div id="main">
+    <div id="main">
+    </div>
+
+    <footer>
+    </footer>
   </div>
 
-  <footer>
-  </footer>
-</div>
-<!-- end of #container -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-<script src="js/plugin.js"></script>
-<script>
-$(function() {
-  $('#main').pluginName({
-    message: 'Hello World!',
-    callback: function(e, message) {
-      $(e).append(message);
-    }
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+  <script src="js/plugin.js"></script>
+  <script>
+  $(function() {
+    $('#main').pluginName({
+      message: 'Hello World!',
+      callback: function(e, message) {
+        $(e).append(message);
+      }
+    });
   });
-});
-
-</script>
+  </script>
 
 </body>
 </html>

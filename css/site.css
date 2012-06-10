@@ -17,8 +17,7 @@ h1 strong {
     font-weight: bold;
 }
 
-#main {
+#container {
     width: 980px;
     margin:  0 auto;
 }
-
