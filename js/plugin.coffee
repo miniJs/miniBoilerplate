@@ -10,8 +10,8 @@ jQuery ->
   $.pluginName = (element, options) ->
     # default plugin settings
     @defaults = 
-      message     : 'hellow word' # option description
-      callback    : ->            # callback description
+      message: 'hellow word'  # option description
+      callback: ->            # callback description
 
     # current state
     @state = ''
@@ -36,15 +36,17 @@ jQuery ->
     @callSettingFunction = (functionName, args = []) ->
       @settings[functionName].apply(this, args)
 
-    @init = ->
-      @settings = $.extend {}, @defaults, options
+    init = =>
+      @settings = $.extend({}, @defaults, options)
       @callSettingFunction('callback', [@$element, @getSetting('message')]) 
 
     # initialise the plugin
-    @init()
+    init()
+
+    this
 
   $.fn.pluginName = (options) ->
-    return this.each ->
+    this.each ->
       if undefined == ($ this).data('pluginName')
         plugin = new $.pluginName this, options
         ($ this).data 'pluginName', plugin

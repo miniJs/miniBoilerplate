@@ -3,7 +3,8 @@
 
   jQuery(function() {
     $.pluginName = function(element, options) {
-      var setState;
+      var init, setState,
+        _this = this;
       this.defaults = {
         message: 'hellow word',
         callback: function() {}
@@ -26,11 +27,12 @@
         }
         return this.settings[functionName].apply(this, args);
       };
-      this.init = function() {
-        this.settings = $.extend({}, this.defaults, options);
-        return this.callSettingFunction('callback', [this.$element, this.getSetting('message')]);
+      init = function() {
+        _this.settings = $.extend({}, _this.defaults, options);
+        return _this.callSettingFunction('callback', [_this.$element, _this.getSetting('message')]);
       };
-      return this.init();
+      init();
+      return this;
     };
     return $.fn.pluginName = function(options) {
       return this.each(function() {
