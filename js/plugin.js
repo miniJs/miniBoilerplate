@@ -20,12 +20,15 @@
       this.getSetting = function(settingKey) {
         return this.settings[settingKey];
       };
-      this.callSettingFunction = function(functionName) {
-        return this.settings[functionName]();
+      this.callSettingFunction = function(functionName, args) {
+        if (args == null) {
+          args = [];
+        }
+        return this.settings[functionName].apply(this, args);
       };
       this.init = function() {
         this.settings = $.extend({}, this.defaults, options);
-        return this.settings.callback(element, this.settings.message);
+        return this.callSettingFunction('callback', [this.$element, this.getSetting('message')]);
       };
       return this.init();
     };

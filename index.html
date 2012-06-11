@@ -29,9 +29,9 @@
   <script>
   $(function() {
     $('#main').pluginName({
-      message: 'Hello World!',
-      callback: function(e, message) {
-        $(e).append(message);
+      message: 'Hello World',
+      callback: function(element, message) {
+        $(element).append(message + '!');
       }
     });
   });

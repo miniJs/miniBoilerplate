@@ -1,8 +1,8 @@
 #
-# CoffeeScript jQuery Plugin Boilerplate
-# By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
-# Version: 1.1 Stable
-# Updated: June 10, 2012
+# CoffeeScript jQuery Plugin Boilerplace
+# Author:    Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
+# Version:   1.1 Stable
+# Updated:   June 10, 2012
 # More info: http://minijs.com/
 #
 
@@ -33,12 +33,12 @@ jQuery ->
       @settings[settingKey]
 
     # call one of the plugin setting functions
-    @callSettingFunction = (functionName) ->
-      @settings[functionName]()
+    @callSettingFunction = (functionName, args = []) ->
+      @settings[functionName].apply(this, args)
 
     @init = ->
       @settings = $.extend {}, @defaults, options
-      @settings.callback element, @settings.message
+      @callSettingFunction('callback', [@$element, @getSetting('message')]) 
 
     # initialise the plugin
     @init()
