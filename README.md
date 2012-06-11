@@ -8,20 +8,18 @@ v1.1 Stable
 
 ## Website Url
 
-http://minijs.com/
+[minijs.com](http://minijs.com/)
 
 ## Bug tracker
 
-If you find a bug, please raise it the issue here on Github! 
-
-https://github.com/miniJs/miniBoilerplate/issues
+If you find a bug, please raise it the [issue here](https://github.com/miniJs/miniBoilerplate/issues) on Github! 
 
 ## Developer
 
-Developed by [Matthieu Aussaguel](mailto:matthieu.aussaguel@gmail.com), [mynameismatthieu.com](http://mynameismatthieu.com)
+Developed by Matthieu Aussaguel, [mynameismatthieu.com](http://mynameismatthieu.com)
 
-+ http://twitter.com/mattaussaguel
-+ http://github.com/matthieua
++ [@mattaussaguel](http://twitter.com/mattaussaguel)
++ [Github Profile](http://github.com/matthieua)
 
 ## Licence
 
