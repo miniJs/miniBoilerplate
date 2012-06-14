@@ -4,7 +4,7 @@ jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in 
 
 ## Verion
 
-v1.2 Stable
+v1.3 Stable
 
 ## Website Url
 

@@ -1,17 +1,17 @@
 #
 # CoffeeScript jQuery Plugin Boilerplace
-# Author:    Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
-# Version:   1.2 Stable
-# Updated:   June 11, 2012
-# More info: http://minijs.com/
+# Author:   Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
+# Version:  1.3 Stable
+# Updated: June 14, 2012
+# Website:  http://minijs.github.com/miniBoilerplate/
 #
 
 jQuery ->
   $.pluginName = (element, options) ->
     # default plugin settings
     @defaults = 
-      message: 'hellow word'  # option description
-      callback: ->            # callback description
+      message: 'hello word'  # option description
+      callback: ->                # callback description
 
     # current state
     @state = ''
