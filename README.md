@@ -1,4 +1,4 @@
-# [CoffeesScript jQuery Plugin Boilerplate](http://minijs.github.com/miniBoilerplate)[![Build Status](https://secure.travis-ci.org/miniJs/miniBoilerplate.png?branch=master)](http://travis-ci.org/matthieua/miniBoilerplate)
+# [CoffeesScript jQuery Plugin Boilerplate](http://minijs.github.com/miniBoilerplate) [![Build Status](https://secure.travis-ci.org/miniJs/miniBoilerplate.png?branch=master)](http://travis-ci.org/matthieua/miniBoilerplate)
 
 jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
 
