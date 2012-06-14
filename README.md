@@ -2,7 +2,7 @@
 
 jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
 
-## Verion
+## Version
 
 v1.3 Stable
 
