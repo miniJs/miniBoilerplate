@@ -2,7 +2,7 @@
 
   jQuery(function() {
     $.pluginName = function(element, options) {
-      var init, setState,
+      var setState,
         _this = this;
       this.defaults = {
         message: 'hello word',
@@ -21,22 +21,24 @@
         return this.settings[settingKey];
       };
       this.callSettingFunction = function(functionName, args) {
-        if (args == null) args = [];
+        if (args == null) {
+          args = [];
+        }
         return this.settings[functionName].apply(this, args);
       };
-      init = function() {
+      this.init = function() {
         _this.settings = $.extend({}, _this.defaults, options);
         return _this.callSettingFunction('callback', [_this.$element, _this.getSetting('message')]);
       };
-      init();
+      this.init();
       return this;
     };
     return $.fn.pluginName = function(options) {
       return this.each(function() {
         var plugin;
-        if (void 0 === ($(this)).data('pluginName')) {
+        if ($(this).data('pluginName') === void 0) {
           plugin = new $.pluginName(this, options);
-          return ($(this)).data('pluginName', plugin);
+          return $(this).data('pluginName', plugin);
         }
       });
     };
