@@ -13,6 +13,7 @@
 src_files:
     - js/libs/jquery.min.js
     - spec/javascripts/libs/jasmine-jquery.js
+    - spec/javascripts/libs/sinon-1.3.4.js
     - js/**/*.js
 
 # stylesheets
