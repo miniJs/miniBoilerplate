@@ -1,15 +1,9 @@
-# A sample Guardfile
-# More info at https://github.com/guard/guard#readme
+# CoffeeScript compilation
+guard 'coffeescript', :input => 'js', :output => 'js'
+guard 'coffeescript', :input => 'spec/coffeescripts', :output => 'spec/javascripts'
 
-guard 'coffeescript', :output => 'js' do
-  watch /^js\/.*[.]coffee/
-end
-
-guard 'coffeescript', :output => 'spec/javascripts' do
-  watch /^spec\/javascripts\/.*[.]coffee/
-end
-
-guard 'jasmine', :jasmine_url => 'http://localhost:8888/' do
-  watch(%r{spec/javascripts/.+Spec\.coffee$}) { "spec/javascripts" }
+# Jasmine tests suite
+guard 'jasmine-headless-webkit' do
+  watch(%r{spec/coffeescripts/.+Spec\.coffee$}) { "spec/javascripts" }
   watch(%r{js/(.+)\.coffee$}) { "spec/javascripts" }
 end
