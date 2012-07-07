@@ -12,37 +12,41 @@
       loadFixtures('fragment.html');
       return this.$element = $('#fixtures');
     });
-    it('should be available on the jQuery object', function() {
-      return expect($.fn.pluginName).toBeDefined();
-    });
-    it('should be chainable', function() {
-      return expect(this.$element.pluginName(options)).toBe(this.$element);
-    });
-    it('should offers default values', function() {
-      var plugin;
-      plugin = new $.pluginName(this.$element[0], options);
-      return expect(plugin.defaults).toBeDefined();
-    });
-    it('should overwrites the settings', function() {
-      var plugin;
-      plugin = new $.pluginName(this.$element[0], options);
-      expect(plugin.settings.message).toBe(options.message);
-      return expect(plugin.settings.callback).toBe(options.callback);
-    });
-    it('should execute the callback append the hello world! to the element', function() {
-      this.$element.pluginName(options);
-      return expect(this.$element).toHaveText('Hello World!');
-    });
-    return it('should execute the callback the right arguments', function() {
-      var foo, plugin;
-      foo = jasmine.createSpy('foo');
-      plugin = new $.pluginName(this.$element, {
-        message: 'Hello World',
-        callback: foo
+    describe('plugin behavior', function() {
+      it('should be available on the jQuery object', function() {
+        return expect($.fn.pluginName).toBeDefined();
       });
-      expect(foo).toHaveBeenCalled();
-      expect(foo.mostRecentCall.args[0]).toBe(this.$element);
-      return expect(foo.mostRecentCall.args[1]).toBe("Hello World");
+      it('should be chainable', function() {
+        return expect(this.$element.pluginName()).toBe(this.$element);
+      });
+      it('should offers default values', function() {
+        var plugin;
+        plugin = new $.pluginName(this.$element);
+        return expect(plugin.defaults).toBeDefined();
+      });
+      return it('should overwrites the settings', function() {
+        var plugin;
+        plugin = new $.pluginName(this.$element, options);
+        expect(plugin.settings.message).toBe(options.message);
+        return expect(plugin.settings.callback).toBe(options.callback);
+      });
+    });
+    describe('plugin logic', function() {
+      return it('should execute the callback append the hello world! to the element', function() {
+        this.$element.pluginName(options);
+        return expect(this.$element).toHaveText('Hello World!');
+      });
+    });
+    return describe('callback', function() {
+      return it('should execute the callback the right arguments', function() {
+        var callback, plugin;
+        callback = jasmine.createSpy('callback');
+        plugin = new $.pluginName(this.$element, {
+          message: 'Hello World',
+          callback: callback
+        });
+        return expect(callback).toHaveBeenCalledWith(this.$element, "Hello World");
+      });
     });
   });
 
