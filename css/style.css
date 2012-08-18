@@ -2,7 +2,7 @@ body {
   border-top: 4px solid #F67049;
   padding: 0;
   margin: 0;
-  background: url(img/type.png) repeat #404040;
+  background: url(../img/type.png) repeat #404040;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -14,7 +14,7 @@ h1 {
   line-height: 72px;
   margin: 0;
   text-align: center;
-  background: url(img/monkey.png) no-repeat 198px 0;
+  background: url(../img/monkey.png) no-repeat 198px 0;
   text-decoration: none;
   color:#F67049;
   padding-top: 180px
@@ -201,12 +201,12 @@ section {
 }
 
 #connect .buttons a.github-button {
-  background-image: url(img/github.png);
+  background-image: url(../img/github.png);
   background-position: 48px 16px;
 }
 
 #connect .buttons a.twitter-button {
-  background-image: url(img/twitter-small.png);
+  background-image: url(../img/twitter-small.png);
   background-position: 24px 20px;
 }
 
@@ -257,12 +257,9 @@ section {
   border-radius: 8px;
 }
 
-
-
 footer {
   text-align: center;
   padding: 0 0 40px;
-
 }
 
 .clearfix:after {
