@@ -1,0 +1,181 @@
+<html>
+<head>
+  <title>MiniBoilerplate</title>
+  <link href="css/style.css" media="all" rel="stylesheet" />
+  <link href='css/prettify.css' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bilbo' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <body onload="prettyPrint()">
+    <section id="header">
+      <div class="section-inner">
+        <span id="twitter-widget">
+          <span>Share the glory</span>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Checkout MiniBoilerplate - Just what you need to create jQuery plugins in CoffeeScript" data-url="http://miniboierlplate.com" data-via="mattaussaguel" data-lang="en"></a>
+        </span>
+        <h1>
+          MiniBoilerplate
+        </h1>
+        <h2>Just what you need to create jQuery plugins in CoffeeScript</h2>
+        <div class="buttons ">
+          <a href="https://github.com/miniJs/miniBoilerplate/zipball/master">Download</a>
+          <a href="https://github.com/miniJs/miniBoilerplate">Github</a>
+          <a href="https://github.com/miniJs">Examples</a>
+        </div>
+      </div>
+    </section>
+    <section id="description">
+      <div class="section-inner">
+        <h3>Description</h3>
+        <p>
+          Looking to create a new <strong>jQuery plugin</strong> in <strong>CoffeeScript</strong> using <strong>Test-driven development</strong>? If so, <strong>MiniBoilerplate</strong> is what you've been looking for.
+        </p>
+        <p>
+          As an example, the <strong>MiniBoilerplate</strong> has been used to create the entire suite of <a href="http://minijs.com">MiniJs</a> plugins.</p>
+        </div>
+      </section>
+      <section id="features">
+        <div class="section-inner">
+          <h3>Features</h3>
+          <div class="clearfix">
+            <ul class="first">
+              <li>
+                <h4>jQuery Plugin Default</h4>
+                <p>
+                  Includes default JavaScript, HTML, CSS and Readme file templates
+                </p>
+              </li>
+              <li>
+                <h4>Test-driven Development</h4>
+                <p>
+                  A Jasmine test suite and helper default templates provided and Travis-CI compatible</p></li>
+                  <li><h4>CoffeeScript</h4>
+                    <p>
+                      JavaScript code is written in CoffeeScript
+                    </p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <h4>Libraries</h4>
+                    <p>
+                      jQuery, Jasmine, Jasmine jQuery and SinonJs libraries included
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Workflow</h4> 
+                    <p>Instant coffeescript compilation and test suite status</p>
+                  </li>
+                  <li>
+                    <h4>Easy to install</h4>
+                    <p>It takes less than 5 minutes to get started</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section id="requirements">
+            <div class="section-inner">
+              <h3>Requirements</h3>
+              <ul>
+                <li>
+                  <h3>Bundler <a href="http://gembundler.com">gembundler.com</a></h3>
+                  <pre class="prettyprint"><code>gem install bundler</code></pre>
+                </li>
+                <li>
+                  <h3>Homebrew <a href="http://mxcl.github.com/homebrew/">mxcl.github.com/homebrew</a></h3>
+                  <pre class="prettyprint"><code>ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)</code></pre>
+                </li>
+                <li>
+                  <h3>Qt <a href="http://qt.nokia.com/">qt.nokia.com</a></h3>
+                  <pre class="prettyprint"><code>brew install qt</code></pre>
+                </li>
+                <li>
+                  <h3>PhantomJS <a href="http://phantomjs.org/">phantomjs.org</a></h3>
+                  <pre class="prettyprint"><code>brew install phantomjs</code></pre>
+                </li>
+              </ul>
+            </div>s
+          </section>
+          <section id="getting-started">
+            <div class="section-inner">
+              <h3>Getting Started</h3>
+              <ul>
+                <li>
+                  <h3>Clone Repo</h3>
+                  <pre class="prettyprint"><code>git clone git://github.com/miniJs/miniBoilerplate.git
+                    cd miniBoilerplace</code></pre>
+                  </li>
+                  <li>
+                    <h3>Install needed libraries</h3>
+                    <pre class="prettyprint"><code>bundle install</code></pre>
+                  </li>
+                  <li>
+                    <h3>Compile CoffeeScript</h3>
+                    <pre class="prettyprint"><code>bundle exec guard</code></pre>
+                  </li>
+                  <li>
+                    <h3>Run test suite in the terminal (headless)</h3>
+                    <pre class="prettyprint"><code>bundle exec guard</code></pre>
+                  </li>
+                  <li>
+                    <h3>Run test suite in the browser</h3>
+                    <pre class="prettyprint"><code>bundle exec rake jasmine
+                      open http://localhost:8888/</code></pre>
+                    </li>
+                    <li>
+                      <h3>Run test suite remotely using Travis-CI</h3>
+                      <p>
+                        <strong>1. </strong>Sync your Github repo with Travis (it takes less than 5 minutes) <br />
+                        <strong>2. </strong>Update your repo name at the very top of the README file (4 spots). <br />
+                        <strong>3. </strong>Push your local Git repository to Github and go to <a href="http://travis-ci.org/">Travis</a>.<br />
+                        <strong>4. </strong>The README file of your Github repository should display the latest build status.
+                      </p>
+                    </li>
+                    <li>
+                      <h3>Plugin Usage</h3>
+                      <pre class="prettyprint"><code>$('#element').pluginName({
+                        message: 'hi',
+                        callback: function() {
+                        alert('bye');
+                      }
+                    });</code></pre>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section id="connect">
+              <div class="section-inner">
+                <h3>Connect</h3>
+                <div class="buttons clearfix">
+                  <a href="http://github.com/minijs" target="_blank" class="github-button homepage-connect-github hide-text">
+                    Github
+                  </a>
+                  <a href="http://twitter.com/mattaussaguel" target="_blank" class="twitter-button hide-text">
+                    Twitter
+                  </a>
+                  <a href="mailto:contact@minijs.com" class="email-button">
+                    email
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section id="about">
+              <div class="section-inner">
+                <h3>About</h3>
+                <h2>Matthieu Aussaguel</h2>
+                <div>
+                  <img src="img/avatar.jpeg" alt="Matthieu Aussaguel" id="avatar" width="80" height="80"/>
+                  <div class="about">
+                    <p>I am a Web Developer currently working at <a href="http://envato.com" target="_blank">Envato</a> as part of the <a href="http://themeforest.net" target="_blank">Marketplace</a> dev team in Melbourne, Australia. Visit my <a href="http://mynameismatthieu.com" target="_blank">personal website</a> and my <a href="http://github.com/matthieua" target="_blank">Github page</a> for more info about me.
+                    </p>
+                    <a href="https://twitter.com/mattaussaguel" class="twitter-follow-button" data-show-count="false">Follow @mattaussaguel</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer><p>&copy; 2012 Brought to you by <a href="http://minijs.com">MiniJs.com</a></p></footer>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <script src="js/prettify.js"></script>
+          </body>
+          </html>

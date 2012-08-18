@@ -1,0 +1,294 @@
+body {
+  border-top: 4px solid #F67049;
+  padding: 0;
+  margin: 0;
+  background: url(img/type.png) repeat #404040;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Wallpoet', cursive;
+  font-size: 60px;
+  padding: 0;
+  letter-spacing: 0px;
+  line-height: 72px;
+  margin: 0;
+  text-align: center;
+  background: url(img/monkey.png) no-repeat 198px 0;
+  text-decoration: none;
+  color:#F67049;
+  padding-top: 180px
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Bilbo', cursive;
+  font-weight: 100;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #C1BFBF;
+}
+
+h3 {
+  color:#F67049;
+  font-size: 22px;
+  padding: 0 0 10px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #d1cfcb;
+}
+
+p, li {
+  color: #C1BFBF;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  list-style: none;
+}
+
+li p {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+
+li h3 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+  padding: 0;
+}
+
+li h3 a {
+  font-size: 12px;
+  padding-left: 4px
+}
+
+pre.prettyprint {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #94CDCB;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+#twitter-widget {
+  float: right;
+  background: #3C3D3F;
+  border-radius: 6px;
+  padding: 10px 0 5px 18px;
+  position: relative;
+  right: -20px;
+}
+
+#twitter-widget span {
+  position: relative;
+  top: -6px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+#header .buttons {
+  margin: 54px 0 0px 110px;
+}
+
+#header .buttons a {
+  color: #3C3D3F;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #8FCDCB;
+  padding: 9px 16px 8px;
+  margin-right: 26px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#header .buttons a:hover {
+  background-color: #F67049;
+  color: #FFFFFF;
+}
+
+#header {
+  padding: 10px 0 30px;
+}
+
+#header .section-inner {
+  background: none;
+  padding: 10px 0;
+}
+
+#description p {
+  font-size: 15px;
+  line-height: 26px;
+}
+section {
+  margin: 30px 0;
+}
+
+.section-inner {
+  padding: 20px 20px 30px;
+  width: 600px;
+  margin: 0 auto;
+  background:#3C3D3F;
+  border-radius: 6px;
+  color: #fff;
+}
+
+#features ul{
+  float: left;
+  width: 290px;
+}
+
+#features li {
+  padding: 20px;
+  background-color: #4d4e50;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+#features li:hover {
+  background-color: #555659;
+}
+
+#features ul.first {
+  margin-right: 20px;
+}
+
+#connect .buttons {
+  margin: 20px 0 10px;
+}
+
+#connect .buttons a {
+      letter-spacing: 1px;
+      font-weight: bold;
+      padding: 20px 0;
+      background-color: #94CDCB;
+      color: #3C3D3F;
+      text-decoration: none;
+      width: 185px;
+      margin: 0 20px 0 0;
+      display: block;
+      float: left;
+      font-size: 28px;
+      line-height: 24px;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+}
+
+#connect .buttons a:hover {
+  background-color: #F67049;
+}
+
+#connect .buttons a.github-button {
+  background-image: url(img/github.png);
+  background-position: 48px 16px;
+}
+
+#connect .buttons a.twitter-button {
+  background-image: url(img/twitter-small.png);
+  background-position: 24px 20px;
+}
+
+#connect .buttons a.email-button {
+  margin-right: 0;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  margin: 0;
+  width: 140px;
+}
+
+#about .section-inner {
+  background: #94CDCB;
+  padding-bottom: 40px;
+}
+
+#about h3 {
+  color: #3C3D3F;
+}
+#about h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-weight: bold;
+  font-size: 42px;
+  margin: 15px  0 10px;
+  letter-spacing: 0;
+  color: #3C3D3F;
+}
+
+#about a {
+  color: #DB7049;
+}
+
+#about a:hover {
+  color: #DB7049;
+  text-decoration: underline;
+}
+
+#about p {
+  margin-bottom: 8px;
+  color: #3C3D3F;
+  line-height: 19px;
+}
+
+#avatar {
+  margin: 5px 20px 20px 0;
+  float: left;
+  border-radius: 8px;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 0 0 40px;
+
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
