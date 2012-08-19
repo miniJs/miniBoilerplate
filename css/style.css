@@ -9,10 +9,6 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-@media only screen and (min-width: 35em) {
-
-
-}
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
@@ -232,18 +228,20 @@ a:hover {
   font-size: 15px;
   line-height: 26px;
 }
-section {
+
+.section {
   margin: 30px 0;
 }
 
 .section-inner {
   padding: 20px 20px 30px;
-  width: 600px;
-  margin: 0 auto;
   background:#3C3D3F;
   border-radius: 6px;
   color: #fff;
+  width: 600px;
+  margin: 0 auto;
 }
+
 
 #features ul{
   float: left;
@@ -347,7 +345,7 @@ section {
   border-radius: 8px;
 }
 
-footer {
+#footer {
   text-align: center;
   padding: 0 0 40px;
 }
