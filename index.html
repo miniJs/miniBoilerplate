@@ -25,7 +25,7 @@
         </h1>
         <h2>Just what you need to create jQuery plugins in CoffeeScript</h2>
         <div class="buttons ">
-          <a href="https://github.com/miniJs/miniBoilerplate/zipball/master">Download</a>
+          <a href="https://github.com/miniJs/miniBoilerplate/zipball/master">Download v1.4</a>
           <a href="https://github.com/miniJs/miniBoilerplate">Github</a>
           <a href="https://github.com/miniJs">Examples</a>
         </div>
@@ -133,17 +133,17 @@ open http://localhost:8888/</code></pre>
                     <li>
                       <h3>Run test suite remotely using Travis-CI</h3>
                       <p>
-                        1. Sync your Github repository with Travis (it takes less than 5 minutes). <br />
+                        1. <a href="http://about.travis-ci.org/docs/user/getting-started/">Hook up your Githup repository to Travis</a>. <br />
                         2. Update your repository name at the very top of the README file (four spots). <br />
-                        3. Push your local Git repository to Github and go to <a href="http://travis-ci.org/">Travis</a>.<br />
-                        4. The README file of your Github repository should display the latest build status.
+                        3. Push your local Git repository to Github and go to <a href="http://travis-ci.org/">Travis</a> to check the buld status.<br />
+                        4. The README file of your Github repository should now display the latest build status.
                       </p>
                     </li>
                     <li>
                       <h3>Plugin usage</h3>
 <pre class="prettyprint"><code>$('#element').pluginName({
-    message: 'hi',
-    callback: function() {
+  message: 'hi',
+  callback: function() {
     alert('bye');
   }
 });</code></pre>
