@@ -1,7 +1,7 @@
 /* Pretty printing styles. Used with prettify.js. */
 /* Vim sunburst theme by David Leibovic */
 
-pre .str, code .str { color: #65B042; } /* string  - green */
+pre .str, code .str { color: #F87242; } /* string  - green */
 pre .kwd, code .kwd { color: #fff; } /* keyword - dark pink */
 pre .com, code .com { color: #fff; } /* comment - gray */
 pre .typ, code .typ { color: #89bdff; } /* type - light blue */
