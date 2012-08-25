@@ -325,11 +325,11 @@ a:hover {
 }
 
 #about a {
-  color: #DB7049;
+  color: #3C3D3F;
+  font-weight: bold;
 }
 
 #about a:hover {
-  color: #DB7049;
   text-decoration: underline;
 }
 
