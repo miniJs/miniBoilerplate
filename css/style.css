@@ -179,6 +179,8 @@ a:hover {
 }
 
 #twitter-widget {
+  display: none;
+  position: relative;
   float: right;
   background: #3C3D3F;
   border-radius: 6px;
