@@ -2,8 +2,7 @@
 
   jQuery(function() {
     $.pluginName = function(element, options) {
-      var setState,
-        _this = this;
+      var setState;
       this.defaults = {
         message: 'hello word',
         callback: function() {}
@@ -27,8 +26,8 @@
         return this.settings[functionName].apply(this, args);
       };
       this.init = function() {
-        _this.settings = $.extend({}, _this.defaults, options);
-        return _this.callSettingFunction('callback', [_this.$element, _this.getSetting('message')]);
+        this.settings = $.extend({}, this.defaults, options);
+        return this.callSettingFunction('callback', [this.$element, this.getSetting('message')]);
       };
       this.init();
       return this;

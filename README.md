@@ -1,4 +1,4 @@
-# [CoffeesScript jQuery Plugin Boilerplate](http://minijs.github.com/miniBoilerplate) [![Build Status](https://secure.travis-ci.org/miniJs/miniBoilerplate.png?branch=master)](http://travis-ci.org/matthieua/miniBoilerplate)
+# [CoffeesScript jQuery Plugin Boilerplate](http://miniboilerplate.com) [![Build Status](https://secure.travis-ci.org/miniJs/miniBoilerplate.png?branch=master)](http://travis-ci.org/miniJs/miniBoilerplate)
 
 jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
 
@@ -14,21 +14,9 @@ http://minijs.github.com/miniBoilerplate/
 
 If you find a bug, please raise it the [issue here](https://github.com/miniJs/miniBoilerplate/issues) on Github! 
 
-## Tests with Jasmine
+## Documenation
 
-The boilerplate also encourages you to write tests for your plugin with [Jasmine](http://pivotal.github.com/jasmine/).
-
-To be able to run the test suite, you'll need to install the Jasmine gem. If you have bundler installed just follow these instructions:
-
-- run `bundle install`
-- run `rake jasmine` and go to 'http://localhost:8888/'
-
-### Using Guard Jasmine
-
-Guard automatically tests your Jasmine specs when files are modified which will significantly increase your productivity.
-
-- intall [phantomjs](http://phantomjs.org/) or just run `brew install phantomjs`
-- run `guard` from the plugin directory
+[miniboilerplate.com](http://miniboilerplate.com/)
 
 ## Developer
 

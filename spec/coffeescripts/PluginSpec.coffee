@@ -1,7 +1,7 @@
 describe 'PluginName', ->
   options =
     message: 'Hello World'
-    callback: (element, text) -> $(element).append("#{text}!")
+    callback: ( element, text ) -> $(element).append("#{text}!")
 
   beforeEach ->
     loadFixtures 'fragment.html'
@@ -22,8 +22,8 @@ describe 'PluginName', ->
     it 'should overwrites the settings', ->
       plugin = new $.pluginName( @$element, options )
 
-      expect( plugin.settings.message ).toBe(options.message)
-      expect( plugin.settings.callback ).toBe(options.callback)
+      expect( plugin.settings.message ).toBe( options.message )
+      expect( plugin.settings.callback ).toBe( options.callback )
 
   describe 'plugin logic', ->
     it 'should execute the callback append the hello world! to the element', ->
@@ -32,8 +32,11 @@ describe 'PluginName', ->
       expect( @$element ).toHaveText 'Hello World!'  
 
   describe 'callback', ->
-    it 'should execute the callback the right arguments', ->
-      callback = jasmine.createSpy 'callback'
-      plugin   = new $.pluginName(@$element, { message: 'Hello World', callback: callback } )
+    it 'should execute the callback with the right arguments', ->
+      options  =
+        message: options.message
+        callback: jasmine.createSpy 'callback'
 
-      expect( callback ).toHaveBeenCalledWith( @$element, "Hello World" )  
+      new $.pluginName( @$element, options )
+
+      expect( options.callback ).toHaveBeenCalledWith( @$element, "Hello World" )  

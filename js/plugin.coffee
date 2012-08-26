@@ -35,13 +35,14 @@ jQuery ->
     @callSettingFunction = ( functionName, args = [] ) ->
       @settings[functionName].apply( this, args )
 
-    @init = =>
+    @init = ->
       @settings = $.extend( {}, @defaults, options )
       @callSettingFunction( 'callback', [ @$element, @getSetting( 'message' ) ] ) 
 
     # initialise the plugin
     @init()
 
+    # make the plugin chainable
     this
 
   $.fn.pluginName = ( options ) ->

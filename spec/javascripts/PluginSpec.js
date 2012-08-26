@@ -38,14 +38,13 @@
       });
     });
     return describe('callback', function() {
-      return it('should execute the callback the right arguments', function() {
-        var callback, plugin;
-        callback = jasmine.createSpy('callback');
-        plugin = new $.pluginName(this.$element, {
-          message: 'Hello World',
-          callback: callback
-        });
-        return expect(callback).toHaveBeenCalledWith(this.$element, "Hello World");
+      return it('should execute the callback with the right arguments', function() {
+        options = {
+          message: options.message,
+          callback: jasmine.createSpy('callback')
+        };
+        new $.pluginName(this.$element, options);
+        return expect(options.callback).toHaveBeenCalledWith(this.$element, "Hello World");
       });
     });
   });
