@@ -3,10 +3,6 @@
   jQuery(function() {
     $.pluginName = function(element, options) {
       var setState;
-      this.defaults = {
-        message: 'hello word',
-        callback: function() {}
-      };
       this.state = '';
       this.settings = {};
       this.$element = $(element);
@@ -31,6 +27,10 @@
       };
       this.init();
       return this;
+    };
+    $.pluginName.prototype.defaults = {
+      message: 'hello word',
+      callback: function() {}
     };
     return $.fn.pluginName = function(options) {
       return this.each(function() {

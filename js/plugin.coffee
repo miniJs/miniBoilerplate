@@ -7,11 +7,6 @@
 
 jQuery ->
   $.pluginName = ( element, options ) ->
-    # default plugin settings
-    @defaults = 
-      message: 'hello word'  # option description
-      callback: ->           # callback description
-
     # current state
     @state = ''
 
@@ -25,7 +20,7 @@ jQuery ->
     setState = ( @state ) ->
 
     #get current state
-    @getState = -> state
+    @getState = -> @state
 
     # get particular plugin setting
     @getSetting = ( settingKey ) ->
@@ -44,6 +39,11 @@ jQuery ->
 
     # make the plugin chainable
     this
+
+  # default plugin settings
+  $.pluginName::defaults =
+      message: 'hello word'  # option description
+      callback: ->           # callback description
 
   $.fn.pluginName = ( options ) ->
     this.each ->
