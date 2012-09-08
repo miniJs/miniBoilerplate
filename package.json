@@ -22,6 +22,9 @@
     "type": "MIT",
     "url" : "http://matthieuaussaguel.mit-license.org/"
   }],
+  "dependencies": {
+    "jQuery": "~1.7.3"
+  },
   "devDependencies" : {
     "grunt"                : "0.3.15",
     "grunt-coffee"         : "0.0.6",
