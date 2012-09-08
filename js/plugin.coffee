@@ -1,7 +1,7 @@
 #
 # CoffeeScript jQuery Plugin Boilerplace
 # Author:   Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
-# Version:  1.4 Stable
+# Version:  1.0 stable
 # Website:  http://minijs.github.com/miniBoilerplate/
 #
 
