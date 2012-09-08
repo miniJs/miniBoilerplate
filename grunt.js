@@ -1,11 +1,8 @@
 /*global module:false*/
-module.exports = function(grunt) {
-  grunt.loadNpmTasks('grunt-jasmine-runner');
-  grunt.loadNpmTasks('grunt-coffee');
- 
+module.exports = function(grunt) { 
   // Project configuration.
   grunt.initConfig({
-    // pkg: '<json:package.json>',
+    pkg: '<json:package.json>',
     meta: {
       banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -13,19 +10,14 @@ module.exports = function(grunt) {
         '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
         ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
     },
-    lint: {
-      files: ['grunt.js', 'lib/**/*.js', 'spec/**/*.js']
-    },
-    concat: {
-      dist: {
-        src: ['<banner:meta.banner>', '<file_strip_banner:lib/<%= pkg.name %>.js>'],
-        dest: 'dist/<%= pkg.name %>.js'
-      }
-    },
-    min: {
-      dist: {
-        src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
-        dest: 'dist/<%= pkg.name %>.min.js'
+    growl: {
+      coffee: {
+        title: 'CoffeeScript',
+        message: 'Compiled'
+      },
+      jasmine: {
+        title: 'Jasmine',
+        message: 'Tests passed'
       }
     },
     coffee: {
@@ -40,51 +32,31 @@ module.exports = function(grunt) {
     },
     jasmine : {
       src : ['spec/javascripts/libs/**/*.js', 'js/**/*.js'],
-      helpers : 'spec/javascripts/helpers/**/*.js',
-      specs : 'spec/javascripts/*.js'
+      specs : 'spec/javascripts/**/*.js'
     },
     watch: {
       coffee : {
         files: ['<config:coffee.spec.src>', '<config:coffee.plugin.src>'],
-        tasks: 'coffee'
+        tasks: 'coffee growl:coffee'
       },
       jasmine : {
-        files: ['<config:jasmine.src>', '<config:jasmine.helpers>', '<config:jasmine.specs>'],
-        tasks: 'jasmine'
+        files: ['<config:jasmine.src>', '<config:jasmine.specs>'],
+        tasks: 'jasmine growl:jasmine'
       }
     },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        node: true,
-        es5: true
-      },
-      globals: {
-        jasmine : false,
-        describe : false,
-        beforeEach : false,
-        expect : false,
-        it : false,
-        spyOn : false
+    min: {
+      dist: {
+        src: ['<banner:meta.banner>', 'js/<%= pkg.name %>.js'],
+        dest: 'js/<%= pkg.name %>.min.js'
       }
     }
   });
-  
 
-  // Load local tasks.
-  grunt.loadTasks('tasks');
+  // Lib tasks.
+  grunt.loadNpmTasks('grunt-growl');
+  grunt.loadNpmTasks('grunt-jasmine-runner');
+  grunt.loadNpmTasks('grunt-coffee');
 
   // Default task.
-  grunt.registerTask('default', 'lint qunit concat min jasmine coffee');
-
-  
+  grunt.registerTask('default', 'growl coffee jasmine');  
 };
