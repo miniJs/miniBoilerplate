@@ -60,10 +60,12 @@
                   Includes default JavaScript, HTML, CSS and Readme file templates
                 </p>
               </li>
-              <li>
-                <h4>Test-driven Development</h4>
-                <p>
-                  Jasmine test suite, default helper templates provided and Travis-CI compatible</p></li>
+                  <li>
+                    <h4>Libraries</h4>
+                    <p>
+                      jQuery, Jasmine and Jasmine jQuery libraries included
+                    </p>
+                  </li>
                   <li><h4>CoffeeScript</h4>
                     <p>
                       JavaScript code is written in CoffeeScript
@@ -71,12 +73,11 @@
                   </li>
                 </ul>
                 <ul>
-                  <li>
-                    <h4>Libraries</h4>
-                    <p>
-                      jQuery, Jasmine and Jasmine jQuery libraries included
-                    </p>
-                  </li>
+              <li>
+                <h4>Test-driven Development</h4>
+                <p>
+                  Jasmine test suite, default helper templates provided and Travis-CI compatible</p>
+                </li>
                   <li>
                     <h4>Workflow</h4>
                     <p>Instant CoffeeScript compilation and test suite status</p>
@@ -89,9 +90,67 @@
               </div>
             </div>
           </div>
+          <div id="code" class="section">
+            <div class="section-inner">
+              <h3>Plugin Code</h3>
+              <ul>
+                <li>
+<pre class="prettyprint"><code>
+jQuery ->
+  $.pluginName = ( element, options ) ->
+    # current state
+    @state = ''
+
+    # plugin settings
+    @settings = {}
+
+    # jQuery version of DOM element attached to the plugin
+    @$element = $ element
+
+    # set current state
+    setState = ( @state ) ->
+
+    #get current state
+    @getState = -> @state
+
+    # get particular plugin setting
+    @getSetting = ( settingKey ) ->
+      @settings[settingKey]
+
+    # call one of the plugin setting functions
+    @callSettingFunction = ( functionName, args = [] ) ->
+      @settings[functionName].apply( this, args )
+
+    @init = ->
+      @settings = $.extend( {}, @defaults, options )
+      @callSettingFunction( 'callback', [ @$element, @getSetting( 'message' ) ] ) 
+
+    # initialise the plugin
+    @init()
+
+    # make the plugin chainable
+    this
+
+  # default plugin settings
+  $.pluginName::defaults =
+      message: 'hello word'  # option description
+      callback: ->           # callback description
+
+  $.fn.pluginName = ( options ) ->
+    this.each ->
+      if $( this ).data( 'pluginName' ) is undefined
+        plugin = new $.pluginName( this, options )
+        $( this).data( 'pluginName', plugin )
+      </code></pre>
+        </li>
+                      </ul>
+
+            </div>
+
+          </div>
           <div id="requirements" class="section">
             <div class="section-inner">
-              <h3>Requirements</h3>
+              <h3>TDD Requirements</h3>
               <ul>
                 <li>
                   <h3>Bundler <a href="http://gembundler.com">gembundler.com</a></h3>
@@ -114,7 +173,7 @@
           </div>
           <div id="getting-started" class="section">
             <div class="section-inner">
-              <h3>Getting Started</h3>
+              <h3>TDD Workflow</h3>
               <ul>
                 <li>
                   <h3>Download MiniBoilerplate and go to project folder</h3>
@@ -181,7 +240,7 @@ open http://localhost:8888/</code></pre>
                 <div>
                   <img src="img/avatar-2.png" alt="Matthieu Aussaguel" id="avatar" width="80" height="80"/>
                   <div class="about">
-                    <p>I am a Web Developer currently working at <a href="http://envato.com" target="_blank">Envato</a> as part of the <a href="http://themeforest.net" target="_blank">Marketplace</a> dev team in Melbourne, Australia. Visit my <a href="http://mynameismatthieu.com" target="_blank">personal website</a> and my <a href="http://github.com/matthieua" target="_blank">Github page</a> for more info about me.
+                    <p>I am a Web Developer currently working at <a href="http://envato.com" target="_blank">Envato</a> as part of the <a href="http://themeforest.net" target="_blank">Marketplace</a> dev team in Melbourne, Australia. I focus mostly on Ruby/Rails technologies but I also enjoy coding in CoffeeScript. Visit my <a href="http://mynameismatthieu.com" target="_blank">personal website</a> and my <a href="http://github.com/matthieua" target="_blank">Github page</a> for more info about me.
                     </p>
                     <a href="https://twitter.com/mattaussaguel" class="twitter-follow-button" data-show-count="false">Follow @mattaussaguel</a>
                   </div>

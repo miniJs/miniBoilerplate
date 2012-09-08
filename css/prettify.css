@@ -3,9 +3,9 @@
 
 pre .str, code .str { color: #F87242; } /* string  - green */
 pre .kwd, code .kwd { color: #fff; } /* keyword - dark pink */
-pre .com, code .com { color: #fff; } /* comment - gray */
+pre .com, code .com { color: #C1BFBF; } /* comment - gray */
 pre .typ, code .typ { color: #89bdff; } /* type - light blue */
-pre .lit, code .lit { color: #3387CC; } /* literal - blue */
+pre .lit, code .lit { color: #94CDCB; } /* literal - blue */
 pre .pun, code .pun { color: #fff; } /* punctuation - white */
 pre .pln, code .pln { color: #fff; } /* plaintext - white */
 pre .tag, code .tag { color: #89bdff; } /* html/xml tag    - light blue */
@@ -44,7 +44,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 @media print {
   pre .str, code .str { color: #060; }
   pre .kwd, code .kwd { color: #fff; font-weight: bold; }
-  pre .com, code .com { color: #600; font-style: italic; }
+  pre .com, code .com { color: #C1BFBF; font-style: italic; }
   pre .typ, code .typ { color: #404; font-weight: bold; }
   pre .lit, code .lit { color: #044; }
   pre .pun, code .pun { color: #440; }

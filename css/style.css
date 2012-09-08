@@ -100,7 +100,7 @@ h1 {
   line-height: 72px;
   margin: 0;
   text-align: center;
-  background: url(../img/monkey.png) no-repeat 198px 0;
+  background: url(../img/monkey.png) no-repeat 248px 0;
   text-decoration: none;
   color:#F67049;
   padding-top: 180px
@@ -197,7 +197,7 @@ a:hover {
 }
 
 #header .buttons {
-  margin: 54px 0 0px 84px;
+  margin: 54px 0 0px 134px;
 }
 
 #header .buttons a {
@@ -239,14 +239,14 @@ a:hover {
   background:#3C3D3F;
   border-radius: 6px;
   color: #fff;
-  width: 600px;
+  width: 700px;
   margin: 0 auto;
 }
 
 
 #features ul{
   float: left;
-  width: 290px;
+  width: 340px;
 }
 
 #features li {
@@ -275,7 +275,7 @@ a:hover {
       background-color: #94CDCB;
       color: #3C3D3F;
       text-decoration: none;
-      width: 185px;
+      width: 235px;
       margin: 0 20px 0 0;
       display: block;
       float: left;
@@ -291,12 +291,12 @@ a:hover {
 
 #connect .buttons a.github-button {
   background-image: url(../img/github.png);
-  background-position: 46px 16px;
+  background-position: 71px 16px;
 }
 
 #connect .buttons a.twitter-button {
   background-image: url(../img/twitter-small.png);
-  background-position: 24px 20px;
+  background-position: 49px 20px;
 }
 
 #connect .buttons a.email-button {
