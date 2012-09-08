@@ -57,6 +57,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jasmine-runner');
   grunt.loadNpmTasks('grunt-coffee');
 
+
   // Default task.
   grunt.registerTask('default', 'growl coffee jasmine');  
+
+  // Travis CI task.
+  grunt.registerTask('travis', 'jasmine');
 };
