@@ -1,0 +1,30 @@
+{
+  "name"            : "miniboilerplate",
+  "title"           : "MiniBoilerplate",
+  "description"     : "Example jQuery plugin using TDD",
+  "version"         : "0.1.0",
+  "homepage"        : "http://miniboilerplate.com",
+  "author"          : {
+    "name"  : "Matthieu Aussaguel",
+    "email" : "matthieu.aussaguel@gmail.com",
+    "url"   : "http://mynameismatthieu.com"
+  },
+  "repository" : {
+    "type" : "git",
+    "url"  : "git://github.com/miniJs/miniBoilerplate.git"
+  },
+  "description" : "",
+  "keywords": [],
+  "bugs" : {
+    "url" : "https://github.com/miniJs/miniBoilerplate/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url" : "http://matthieuaussaguel.mit-license.org/"
+  }],
+  "devDependencies" : {
+    "grunt-coffee"         : "0.0.6",
+    "grunt-growl"          : "0.1.2",
+    "grunt-jasmine-runner" : "0.5.3"
+  }
+}
