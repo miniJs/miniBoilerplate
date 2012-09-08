@@ -1,3 +1,5 @@
 .DS_Store
 Gemfile.lock
 .jhw-cache/
+_SpecRunner.html
+node_modules
