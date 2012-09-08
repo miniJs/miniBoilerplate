@@ -25,6 +25,6 @@
   "devDependencies" : {
     "grunt-coffee"         : "0.0.6",
     "grunt-growl"          : "0.1.2",
-    "grunt-jasmine-runner" : "0.5.3"
+    "grunt-jasmine-runner" : "0.5.5"
   }
 }
