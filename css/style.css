@@ -351,6 +351,38 @@ a:hover {
   padding: 0 0 40px;
 }
 
+#github-ribbon {
+  background-color: #F67049;
+  border: 1px solid #242424;
+  overflow: hidden;
+  position: fixed;
+  left: -50px;
+  top: 50px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px;
+  z-index: 30;
+  border-image: initial;
+}
+
+#github-ribbon a {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #212121;
+  display: block;
+  font: bold 13px Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.3em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.5em;
+  border-image: initial;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
