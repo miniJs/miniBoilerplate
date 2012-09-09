@@ -146,8 +146,23 @@ jQuery ->
                       </ul>
 
             </div>
-
           </div>
+          <div id="usage" class="section">
+            <div class="section-inner">
+              <h3>Plugin Usage</h3>
+              <ul>
+                <li>
+<pre class="prettyprint"><code>$('#element').pluginName({
+  message: 'hi',
+  callback: function() {
+    alert('bye');
+  }
+});</code></pre>
+</li>
+              </ul>
+
+    </div>
+  </div>
           <div id="requirements" class="section">
             <div class="section-inner">
               <h3>TDD Requirements</h3>
@@ -205,15 +220,6 @@ open http://localhost:8888/</code></pre>
                         4. The README file of your Github repository should now display the latest build status
                       </p>
                     </li>
-                    <li>
-                      <h3>Plugin usage</h3>
-<pre class="prettyprint"><code>$('#element').pluginName({
-  message: 'hi',
-  callback: function() {
-    alert('bye');
-  }
-});</code></pre>
-                  </li>
                 </ul>
               </div>
             </div>
