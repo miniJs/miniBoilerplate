@@ -2,7 +2,7 @@
   "name"            : "pluginName",
   "title"           : "Plugin Name",
   "description"     : "Example jQuery plugin using TDD",
-  "version"         : "1.0",
+  "version"         : "1.0.0",
   "homepage"        : "http://miniboilerplate.com",
   "author"          : {
     "name"  : "Matthieu Aussaguel",
