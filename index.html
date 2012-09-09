@@ -33,7 +33,7 @@
         </h1>
         <h2>Just what you need to create jQuery plugins in CoffeeScript</h2>
         <div class="buttons ">
-          <a href="https://github.com/miniJs/miniBoilerplate/zipball/master">Download v1.0</a>
+          <a href="https://github.com/miniJs/miniBoilerplate/zipball/master">Download v1.1</a>
           <a href="https://github.com/miniJs/miniBoilerplate">Github</a>
           <a href="https://github.com/miniJs">Examples</a>
         </div>
@@ -167,15 +167,19 @@ jQuery ->
   </div>
           <div id="requirements" class="section">
             <div class="section-inner">
-              <h3>TDD Requirements</h3>
+              <h3>Requirements</h3>
               <ul>
-                <li>
-                  <h3>Bundler <a href="http://gembundler.com">gembundler.com</a></h3>
-                  <pre class="prettyprint"><code>gem install bundler</code></pre>
-                </li>
                 <li>
                   <h3>Homebrew <a href="http://mxcl.github.com/homebrew/">mxcl.github.com/homebrew</a></h3>
                   <pre class="prettyprint"><code>ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)</code></pre>
+                </li>
+                <li>
+                  <h3>Node.js <a href="http://nodejs.org/"></a></h3>
+                  <pre class="prettyprint"><code>brew install node</code></pre>
+                </li>
+                <li>
+                  <h3>Grunt <a href="http://gruntjs.com/"></a></h3>
+                  <pre class="prettyprint"><code>npm install -g grunt</code></pre>
                 </li>
                 <li>
                   <h3>Qt <a href="http://qt.nokia.com/">qt.nokia.com</a></h3>
@@ -190,7 +194,7 @@ jQuery ->
           </div>
           <div id="getting-started" class="section">
             <div class="section-inner">
-              <h3>TDD Workflow</h3>
+              <h3>Workflow</h3>
               <ul>
                 <li>
                   <h3>Download MiniBoilerplate and go to project folder</h3>
@@ -198,28 +202,39 @@ jQuery ->
                   </li>
                   <li>
                     <h3>Install needed libraries</h3>
-                    <pre class="prettyprint"><code>bundle install</code></pre>
+                    <pre class="prettyprint"><code>npm install</code></pre>
                   </li>
                   <li>
                     <h3>Compile CoffeeScript</h3>
-                    <pre class="prettyprint"><code>bundle exec guard</code></pre>
+                    <pre class="prettyprint"><code>grunt coffee</code></pre>
                   </li>
                   <li>
                     <h3>Run test suite in the terminal (headless)</h3>
-                    <pre class="prettyprint"><code>bundle exec guard</code></pre>
+                    <pre class="prettyprint"><code>grunt jasmine</code></pre>
                   </li>
                   <li>
                     <h3>Run test suite in the browser</h3>
-<pre class="prettyprint"><code>bundle exec rake jasmine
-open http://localhost:8888/</code></pre>
+                    <pre class="prettyprint"><code>grunt jasmine-server</code></pre>
+                    </li>
+                    <li>
+                    <h3>Compile CoffeeScript and run tests suite</h3>
+                    <pre class="prettyprint"><code>grunt</code></pre>
+                    </li>
+                    <li>
+                    <h3>Compile CoffeeScript and run tests suite whenever files change (recommended)</h3>
+                    <pre class="prettyprint"><code>grunt watch</code></pre>
+                    </li>
+                    <li>
+                    <h3>Minify plugin</h3>
+                    <pre class="prettyprint"><code>grunt min</code></pre>
                     </li>
                     <li>
                       <h3>Run test suite remotely using Travis-CI</h3>
                       <p>
-                        1. <a href="http://about.travis-ci.org/docs/user/getting-started/">Hook up your Githup repository to Travis</a> <br />
-                        2. Update your repository name at the very top of the README file (four spots)<br />
-                        3. Push your local Git repository to Github and go to <a href="http://travis-ci.org/">Travis</a> to check the build status<br />
-                        4. The README file of your Github repository should now display the latest build status
+                        1. <a href="http://about.travis-ci.org/docs/user/getting-started/">Hook up your GitHub</a> repository to Travis <br />
+                        2. Update plugin name in package.json<br />
+                        3. Update repository name at the very top of the README file (four spots)<br />
+                        4. Push your local Git repository to Github and go to <a href="http://travis-ci.org/">Travis</a> to check your build status
                       </p>
                     </li>
                 </ul>
