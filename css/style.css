@@ -226,8 +226,9 @@ a:hover {
 }
 
 #description p {
-  font-size: 15px;
   line-height: 26px;
+  font-weight: 100;
+  font-size: 15px
 }
 
 .section {
