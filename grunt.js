@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       }
     },
     jasmine : {
-      src : ['js/**/*.js', 'spec/javascripts/libs/**/*.js'],
+      src : ['js/libs/*.js', 'js/*.js', 'spec/javascripts/libs/**/*.js'],
       specs : 'spec/javascripts/**/*.js'
     },
     watch: {

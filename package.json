@@ -29,6 +29,6 @@
     "grunt-jasmine-runner" : "0.5.5"
   },
   "scripts": {
-    "test": "grunt jasmine"
+    "test": "grunt travis"
   }
 }
