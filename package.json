@@ -1,8 +1,8 @@
 {
-  "name"            : "miniboilerplate",
-  "title"           : "MiniBoilerplate",
+  "name"            : "pluginName",
+  "title"           : "Plugin Name",
   "description"     : "Example jQuery plugin using TDD",
-  "version"         : "0.1.0",
+  "version"         : "1.0",
   "homepage"        : "http://miniboilerplate.com",
   "author"          : {
     "name"  : "Matthieu Aussaguel",
@@ -13,8 +13,8 @@
     "type" : "git",
     "url"  : "git://github.com/miniJs/miniBoilerplate.git"
   },
-  "description" : "",
-  "keywords": [],
+  "description" : "Looking to create a jQuery plugin in CoffeeScript using Test-driven development? If so, MiniBoilerplate is what you've been looking for.",
+  "keywords": ["development", "workflow", "rapid", "test", "jasmine", "jquery", "plugin", "headless", "javascript", "coffeescript", "guard", "boilerplate", "default", "toolkit", "base"],
   "bugs" : {
     "url" : "https://github.com/miniJs/miniBoilerplate/issues"
   },
