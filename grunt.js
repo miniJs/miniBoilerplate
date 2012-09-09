@@ -2,52 +2,57 @@
 module.exports = function(grunt) { 
   // Project configuration.
   grunt.initConfig({
-    pkg: '<json:package.json>',
-    meta: {
-      banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
+    pkg : '<json:package.json>',
+    meta : {
+      banner : '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
         '<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
         ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
     },
-    growl: {
-      coffee: {
-        title: 'CoffeeScript',
-        message: 'Compiled'
+    coffee : {
+      helpers : {
+        src  : 'spec/coffeescripts/helpers/*.coffee',
+        dest : 'spec/javascripts/helpers'
       },
-      jasmine: {
-        title: 'Jasmine',
-        message: 'Tests passed'
-      }
-    },
-    coffee: {
-      spec: {
-        src: 'spec/coffeescripts/*Spec.coffee',
-        dest: 'spec/javascripts'
+      specs : {
+        src  : 'spec/coffeescripts/*.coffee',
+        dest : 'spec/javascripts'
       },
-      plugin: {
-        src: 'js/*.coffee',
-        dest: 'js'
+      plugin : {
+        src  : 'js/*.coffee',
+        dest : 'js'
       }
     },
     jasmine : {
-      src : ['js/libs/**/*.js', 'js/*.js', 'spec/javascripts/libs/**/*.js'],
-      specs : 'spec/javascripts/**/*.js'
+      src     : ['js/libs/**/*.js', 'js/*.js', 'spec/javascripts/libs/**/*.js'],
+      helpers : 'spec/javascripts/helpers/**/*.js',
+      specs   : 'spec/javascripts/**/*.js'
     },
-    watch: {
+    watch : {
       coffee : {
-        files: ['<config:coffee.spec.src>', '<config:coffee.plugin.src>'],
+        files: ['<config:coffee.helpers.src>', '<config:coffee.specs.src>', '<config:coffee.plugin.src>'],
         tasks: 'coffee growl:coffee'
       },
       jasmine : {
-        files: ['<config:jasmine.src>', '<config:jasmine.specs>'],
-        tasks: 'jasmine growl:jasmine'
+        files : ['<config:jasmine.src>', '<config:jasmine.specs>'],
+        tasks : 'jasmine growl:jasmine'
       }
     },
-    min: {
-      dist: {
-        src: ['<banner:meta.banner>', 'js/<%= pkg.name %>.js'],
-        dest: 'js/<%= pkg.name %>.min.js'
+    growl : {
+      coffee : {
+        title   : 'CoffeeScript',
+        message : 'Compiled successfully'
+      },
+      jasmine : {
+        title   : 'Jasmine',
+        message : 'Tests passed successfully'
+      }
+    },
+    min : {
+      dist : {
+        src  : ['<banner:meta.banner>', 'js/<%= pkg.name %>.js'],
+        dest : 'js/<%= pkg.name %>.min.js'
       }
     }
   });
