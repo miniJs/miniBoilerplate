@@ -1,28 +1,29 @@
 
 jQuery(function() {
   $.pluginName = function(element, options) {
-    var setState;
-    this.state = '';
+    var state;
+    state = '';
     this.settings = {};
     this.$element = $(element);
-    setState = function(state) {
-      this.state = state;
+    this.setState = function(_state) {
+      return state = _state;
     };
     this.getState = function() {
-      return this.state;
+      return state;
     };
-    this.getSetting = function(settingKey) {
-      return this.settings[settingKey];
+    this.getSetting = function(key) {
+      return this.settings[key];
     };
-    this.callSettingFunction = function(functionName, args) {
+    this.callSettingFunction = function(name, args) {
       if (args == null) {
         args = [];
       }
-      return this.settings[functionName].apply(this, args);
+      return this.settings[name].apply(this, args);
     };
     this.init = function() {
       this.settings = $.extend({}, this.defaults, options);
-      return this.callSettingFunction('callback', [this.$element, this.getSetting('message')]);
+      this.callSettingFunction('callback', [this.$element, this.getSetting('message')]);
+      return this.setState('ready');
     };
     this.init();
     return this;

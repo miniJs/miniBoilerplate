@@ -1,14 +1,15 @@
 #
-# CoffeeScript jQuery Plugin Boilerplace
-# Author:   Matthieu Aussaguel, http://www.mynameismatthieu.com, @mattaussaguel
-# Version:  1.4 Stable
-# Website:  http://minijs.github.com/miniBoilerplate/
+# Name    : <plugin name>
+# Author  : <your name>, <your website url>, <twitter handle>
+# Version : <version number>
+# Repo    : <repo url>
+# Website : <website url>
 #
 
 jQuery ->
   $.pluginName = ( element, options ) ->
     # current state
-    @state = ''
+    state = ''
 
     # plugin settings
     @settings = {}
@@ -17,22 +18,24 @@ jQuery ->
     @$element = $ element
 
     # set current state
-    setState = ( @state ) ->
+    @setState = ( _state ) -> state = _state
 
     #get current state
-    @getState = -> @state
+    @getState = -> state
 
     # get particular plugin setting
-    @getSetting = ( settingKey ) ->
-      @settings[settingKey]
+    @getSetting = ( key ) ->
+      @settings[ key ]
 
     # call one of the plugin setting functions
-    @callSettingFunction = ( functionName, args = [] ) ->
-      @settings[functionName].apply( this, args )
+    @callSettingFunction = ( name, args = [] ) ->
+      @settings[name].apply( this, args )
 
     @init = ->
       @settings = $.extend( {}, @defaults, options )
       @callSettingFunction( 'callback', [ @$element, @getSetting( 'message' ) ] ) 
+
+      @setState 'ready'
 
     # initialise the plugin
     @init()
