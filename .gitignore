@@ -1,5 +1,3 @@
 .DS_Store
-Gemfile.lock
-.jhw-cache/
 node_modules/
 _SpecRunner.html

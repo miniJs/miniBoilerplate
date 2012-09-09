@@ -25,14 +25,26 @@ describe 'PluginName', ->
       expect( plugin.settings.message ).toBe( options.message )
       expect( plugin.settings.callback ).toBe( options.callback )
 
+  describe 'plugin state', ->
+    beforeEach ->
+      @plugin = new $.pluginName( @$element )
+
+    it 'should have a ready state', ->
+      expect( @plugin.getState() ).toBe 'ready'
+
+    it 'should be updatable', ->
+      @plugin.setState( 'new state' )
+
+      expect( @plugin.getState() ).toBe 'new state'
+
   describe 'plugin logic', ->
-    it 'should execute the callback append the hello world! to the element', ->
+    it 'should execute the callback method', ->
       @$element.pluginName( options )
 
       expect( @$element ).toHaveText 'Hello World!'  
 
   describe 'callback', ->
-    it 'should execute the callback with the right arguments', ->
+    it 'should execute the callback with the correct arguments', ->
       options  =
         message: options.message
         callback: jasmine.createSpy 'callback'
