@@ -9,5 +9,5 @@ $(function() {
                         .show()
                         .animate({opacity: 1, top: "+=20"}, 100, 'swing')
   }
-  , 1000);
+  , 2000);
 });
