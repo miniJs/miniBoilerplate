@@ -250,6 +250,10 @@ a:hover {
   width: 340px;
 }
 
+#features ul.first {
+  margin-right: 20px;
+}
+
 #features li {
   padding: 20px;
   background-color: #4d4e50;
@@ -261,8 +265,34 @@ a:hover {
   background-color: #555659;
 }
 
-#features ul.first {
-  margin-right: 20px;
+#features li h4 {
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+}
+
+#features li.default h4 {
+  background-image: url(../img/features/default.png);
+}
+
+#features li.install h4 {
+  background-image: url(../img/features/install.png);
+}
+
+#features li.workflow h4 {
+  background-image: url(../img/features/workflow.png);
+}
+
+#features li.libraries h4 {
+  background-image: url(../img/features/libraries.png);
+}
+
+#features li.tdd h4 {
+  background-image: url(../img/features/tdd.png);
+}
+
+#features li.coffee h4 {
+  background-image: url(../img/features/coffee.png);
 }
 
 #connect .buttons {
