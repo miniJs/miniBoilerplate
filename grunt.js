@@ -30,14 +30,8 @@ module.exports = function(grunt) {
       specs   : 'spec/javascripts/**/*.js'
     },
     watch : {
-      coffee : {
-        files: ['<config:coffee.helpers.src>', '<config:coffee.specs.src>', '<config:coffee.plugin.src>'],
-        tasks: 'coffee growl:coffee'
-      },
-      jasmine : {
-        files : ['<config:jasmine.src>', '<config:jasmine.specs>'],
-        tasks : 'jasmine growl:jasmine'
-      }
+      files: ['<config:coffee.helpers.src>', '<config:coffee.specs.src>', '<config:coffee.plugin.src>'],
+      tasks: 'coffee growl:coffee jasmine growl:jasmine'
     },
     growl : {
       coffee : {
