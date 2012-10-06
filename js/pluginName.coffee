@@ -33,7 +33,6 @@ jQuery ->
 
     @init = ->
       @settings = $.extend( {}, @defaults, options )
-      @callSettingFunction( 'callback', [ @$element, @getSetting( 'message' ) ] ) 
 
       @setState 'ready'
 
@@ -46,7 +45,6 @@ jQuery ->
   # default plugin settings
   $.pluginName::defaults =
       message: 'hello word'  # option description
-      callback: ->           # callback description
 
   $.fn.pluginName = ( options ) ->
     this.each ->

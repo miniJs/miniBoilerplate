@@ -1,7 +1,6 @@
 describe 'PluginName', ->
   options =
     message: 'Hello World'
-    callback: ( element, text ) -> $(element).append("#{text}!")
 
   beforeEach ->
     loadFixtures 'fragment.html'
@@ -23,7 +22,6 @@ describe 'PluginName', ->
       plugin = new $.pluginName( @$element, options )
 
       expect( plugin.settings.message ).toBe( options.message )
-      expect( plugin.settings.callback ).toBe( options.callback )
 
   describe 'plugin state', ->
     beforeEach ->
@@ -36,19 +34,3 @@ describe 'PluginName', ->
       @plugin.setState( 'new state' )
 
       expect( @plugin.getState() ).toBe 'new state'
-
-  describe 'plugin logic', ->
-    it 'should execute the callback method', ->
-      @$element.pluginName( options )
-
-      expect( @$element ).toHaveText 'Hello World!'  
-
-  describe 'callback', ->
-    it 'should execute the callback with the correct arguments', ->
-      options  =
-        message: options.message
-        callback: jasmine.createSpy 'callback'
-
-      new $.pluginName( @$element, options )
-
-      expect( options.callback ).toHaveBeenCalledWith( @$element, "Hello World" )  
