@@ -60,5 +60,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', 'growl coffee jasmine');  
 
   // Travis CI task.
-  grunt.registerTask('travis', 'jasmine');
+  grunt.registerTask('travis', 'coffee jasmine');
 };
