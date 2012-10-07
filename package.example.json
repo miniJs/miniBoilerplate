@@ -1,0 +1,33 @@
+{
+  "name"            : "pluginName",
+  "title"           : "Plugin Name",
+  "version"         : "0.1.0",
+  "homepage"        : "",
+  "author"          : {
+    "name"  : "<name>",
+    "email" : "<email>",
+    "url"   : "<website-url>"
+  },
+  "repository" : {
+    "type" : "git",
+    "url"  : "git://github.com/<github-username>/<pluginName>.git"
+  },
+  "description" : "",
+  "keywords": [],
+  "bugs" : {
+    "url" : "https://github.com/<github-username>/<pluginName>/issues",
+    "url": "https://github.com/<github-username>/<pluginName>/blob/master/LICENSE-MIT"
+  },
+  "licenses": [{
+    "type": "MIT"
+  }],
+  "devDependencies" : {
+    "grunt"                : "0.3.15",
+    "grunt-coffee"         : "0.0.6",
+    "grunt-growl"          : "0.1.2",
+    "grunt-jasmine-runner" : "0.5.5"
+  },
+  "scripts": {
+    "test": "grunt travis"
+  }
+}
