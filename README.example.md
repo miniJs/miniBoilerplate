@@ -16,7 +16,13 @@ If you find a bug, please raise it the [issue here](https://github.com/<github-u
 
 ## Documenation
 
-https://github.com/<github-username>/<pluginName>#README
+- Basic usage
+
+```javascript
+$('#element').<pluginName>({
+  message: 'Hi'
+});
+```
 
 ## Developer
 
