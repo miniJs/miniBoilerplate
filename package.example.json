@@ -2,6 +2,8 @@
   "name"            : "pluginName",
   "title"           : "Plugin Name",
   "version"         : "0.1.0",
+  "description" : "",
+  "keywords": [],
   "homepage"        : "",
   "author"          : {
     "name"  : "<name>",
@@ -12,8 +14,6 @@
     "type" : "git",
     "url"  : "git://github.com/<github-username>/<pluginName>.git"
   },
-  "description" : "",
-  "keywords": [],
   "bugs" : {
     "url" : "https://github.com/<github-username>/<pluginName>/issues",
     "url": "https://github.com/<github-username>/<pluginName>/blob/master/LICENSE-MIT"
