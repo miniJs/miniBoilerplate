@@ -44,7 +44,7 @@ jQuery ->
 
   # default plugin settings
   $.pluginName::defaults =
-      message: 'hello word'  # option description
+      message: 'Hello world'  # option description
 
   $.fn.pluginName = ( options ) ->
     this.each ->
