@@ -8,7 +8,7 @@ v1.1 Stable
 
 ## Website Url
 
-http://minijs.github.com/miniBoilerplate/
+http://minijs.github.io/miniBoilerplate/
 
 ## Bug tracker
 
