@@ -1,6 +1,6 @@
 {
   "name"        : "miniBoilerplate",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "MiniBoilperplate",
   "description": "Looking to create a jQuery plugin in CoffeeScript using Test-driven development? If so, MiniBoilerplate is what you've been looking for.",
   "keywords": ["development", "workflow", "rapid", "test", "jasmine", "jquery", "plugin", "headless", "javascript", "coffeescript", "guard", "boilerplate", "default", "toolkit", "base"],
