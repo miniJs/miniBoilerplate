@@ -24,10 +24,6 @@
   <body>
     <div id="header" class="section">
       <div class="section-inner">
-        <span id="twitter-widget">
-          <span>Share the glory</span>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Checkout MiniBoilerplate - Just what you need to rapidly create jQuery plugins in CoffeeScript" data-url="http://miniboilerplate.com" data-via="mattaussaguel" data-lang="en"></a>
-        </span>
         <h1>
           MiniBoilerplate
         </h1>
@@ -35,7 +31,7 @@
         <div class="buttons ">
           <a href="https://github.com/miniJs/miniBoilerplate/zipball/master">Download v1.2</a>
           <a href="https://github.com/miniJs/miniBoilerplate">Github</a>
-          <a href="https://github.com/miniJs">Examples</a>
+          <a href="http://minijs.com">Examples</a>
         </div>
       </div>
     </div>
@@ -128,7 +124,7 @@ jQuery ->
 
     @init = ->
       @settings = $.extend( {}, @defaults, options )
-      @callSettingFunction( 'callback', [ @$element, @getSetting( 'message' ) ] ) 
+      @callSettingFunction( 'callback', [ @$element, @getSetting( 'message' ) ] )
 
       @setState 'ready'
 
@@ -188,7 +184,7 @@ jQuery ->
                 </li>
                 <li>
                   <h3>Grunt <a href="http://gruntjs.com/">gruntjs.com</a></h3>
-                  <pre class="prettyprint"><code>npm install -g grunt</code></pre>
+                  <pre class="prettyprint"><code>npm install -g grunt-cli</code></pre>
                 </li>
                 <li>
                   <h3>Optional: Growl and Growl Notify <a href="http://growl.info">growl.info</a></h3>
