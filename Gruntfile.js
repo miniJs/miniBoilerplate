@@ -60,8 +60,7 @@ module.exports = function(grunt) {
     watch : {
       files: [
         'js/*.coffee', 
-        'spec/coffeescripts/*.coffee', 
-        'spec/coffeescripts/helpers/*.coffee'
+        'spec/coffeescripts/**/*.coffee'
       ],
       tasks: ['coffee', 'growl:coffee', 'jasmine', 'growl:jasmine']
     },
