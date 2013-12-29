@@ -22,13 +22,13 @@
     "url" : "http://matthieuaussaguel.mit-license.org/"
   }],
   "devDependencies" : {
-    "grunt"                : "0.4.1",
-    "grunt-cli"            : "0.1.9",
-    "grunt-contrib-watch"  : "0.5.3",
-    "grunt-contrib-coffee" : "0.7.0",
-    "grunt-contrib-jasmine": "0.5.2",
-    "grunt-contrib-uglify" : "0.2.4",
-    "grunt-growl"          : "0.1.5"
+    "grunt"                : "latest",
+    "grunt-cli"            : "latest",
+    "grunt-contrib-watch"  : "latest",
+    "grunt-contrib-coffee" : "latest",
+    "grunt-contrib-jasmine": "latest",
+    "grunt-contrib-uglify" : "latest",
+    "grunt-growl"          : "latest"
   },
   "scripts": {
     "test": "grunt travis"
