@@ -15,11 +15,11 @@
     "url"  : "git://github.com/<github-username>/<pluginName>.git"
   },
   "bugs" : {
-    "url" : "https://github.com/<github-username>/<pluginName>/issues",
-    "url": "https://github.com/<github-username>/<pluginName>/blob/master/LICENSE-MIT"
+    "url" : "https://github.com/<github-username>/<pluginName>/issues"
   },
   "licenses": [{
-    "type": "MIT"
+    "type": "MIT",
+    "url": "https://github.com/<github-username>/<pluginName>/blob/master/LICENSE-MIT"
   }],
   "devDependencies" : {
     "grunt"                : "0.4.1",
